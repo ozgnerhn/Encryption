@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="tr">
+
+<head>
+
+
+</head>
+
+<body>
+
+{% include 'header.html' %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <br><br><br>
+      <hr>
+      <p><font face="tahoma" size="5" color="blue">
+<b>ÖDEV - 1</b></font></p>
+      <hr>
+
+        <title>{% block title %} - Kriptoloji - {% endblock %}</title>
+
+      <div class="card mb-3">
+            <div align="center"><img src="{% static 'img/resim.jpg' %}" alt="My image"></div>
+                <div class="card-body">
+                    <h5 class="card-title"><b> {{ home_title }} </b></h5>
+                    <p class="card-text"> {{ home_text }} </p>
+                </div>
+      </div>
+      <hr>
+          <p><font face="tahoma" size="5" color="red">
+<b>ÖDEV - 2</b></font></p>
+      <hr>
+
+
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Key</th>
+      <th scope="col">Decode Text</th>
+      <th scope="col">Encode Text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{ key_0 }}</td>
+      <td>{{ dec_name}}</td>
+      <td>{{ enc_name}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>{{ key_0 }}</td>
+      <td>{{dec_atext}}</td>
+      <td>{{enc_atext}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>{{ key_0 }}</td>
+      <td>{{dec_btext}}</td>
+      <td>{{enc_btext}}</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>{{ key_0 }}</td>
+      <td>{{dec_text}}</td>
+      <td>{{enc_text}}</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>#</td>
+      <td>#</td>
+      <td>#</td>
+    </tr>
+  <tr>
+      <th scope="row">5</th>
+      <td>{{ key_1 }}</td>
+      <td>{{dec_name1}}</td>
+      <td>{{enc_name1}}</td>
+    </tr>
+  <tr>
+      <th scope="row">6</th>
+      <td>{{ key_1 }}</td>
+      <td>{{dec_atext1}}</td>
+      <td>{{enc_atext1}}</td>
+    </tr>
+  <tr>
+      <th scope="row">7</th>
+      <td>{{ key_1 }}</td>
+      <td>{{dec_btext1}}</td>
+      <td>{{enc_btext1}}</td>
+    </tr>
+  <tr>
+      <th scope="row">8</th>
+      <td>{{ key_1 }}</td>
+      <td>{{dec_text1}}</td>
+      <td>{{enc_text1}}</td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>#</td>
+      <td>#</td>
+      <td>#</td>
+    </tr>
+  <tr>
+      <th scope="row">9</th>
+      <td>{{ key_2 }}</td>
+      <td>{{dec_name2}}</td>
+      <td>{{enc_name2}}</td>
+    </tr>
+  <tr>
+      <th scope="row">10</th>
+      <td>{{ key_2 }}</td>
+      <td>{{dec_atext2}}</td>
+      <td>{{enc_atext2}}</td>
+    </tr>
+  <tr>
+      <th scope="row">11</th>
+      <td>{{ key_2 }}</td>
+      <td>{{dec_btext2}}</td>
+      <td>{{enc_btext2}}</td>
+    </tr>
+  <tr>
+      <th scope="row">12</th>
+      <td>{{ key_2 }}</td>
+      <td>{{dec_text2}}</td>
+      <td>{{enc_text2}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+      <hr>
+          <p><font face="tahoma" size="5" color="purple">
+<b>ÖDEV - 3</b></font></p>
+      <hr>
+      <h5 align="left">{{ random_text }}</h5>
+
+      <hr>
+          <p><font face="tahoma" size="5" color="green">
+<b>ÖDEV - 4</b></font></p>
+      <hr>
+        <div align="right" style="color:#f00;"><p><b>Kullanılan Random Metin</b></p> </div>
+        <h5 align="left">{{ random_text }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>Kullanılan Public Key</b></p> </div>
+        <h5 align="left">{{ public_key }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>Kullanılan Private Key</b></p> </div>
+        <h5 align="left">{{ private_key }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>Encrypt Metin</b></p> </div>
+        <h5 align="left">{{ encrypt_text }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>Decrypt Metin</b></p> </div>
+        <h5 align="left">{{ decrypt_text }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>Different Public Key</b></p> </div>
+        <h5 align="left">{{ dif_pub_key }}</h5> <hr>
+        <div align="right" style="color:#f00;"><p><b>İmza Doğrulanması</b></p> </div>
+        <h5 align="left">Bob Ross Tarafından İmzalanan Text(Different_Public_Key) Da Vinci Tarafından Denendiğinde(Public_Key) Hata Vermektedir. Çünkü Asıl Key ile Encrypt Edilen Metin Farklı Bir Key ile Decrypt Edilemez.</h5> <hr>
+
+      <h1 align="left">{{ title2 }}</h1>
+
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+</body>
+</html>
