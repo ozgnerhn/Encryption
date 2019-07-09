@@ -1,54 +1,32 @@
-//////// WINDOWS İÇİN ////////
-
-Kullanılan Çatı: Django
-Yazıldığı Dil: Python 3 (Diğer sürümlerde sorun çıkartabilir. Bu yüzden Python 3 setup dosyasını da ödev içine ekleyeceğim.)
-Kullanılan Platform: JetBrains PyCharm 2018.3.4 x64
+myBlog dizininde bulunan run.bat dosyasÄ±nÄ± Ã§alÄ±ÅŸtÄ±rÄ±n.
+Komutlar Ã§alÄ±ÅŸtÄ±ktan sonra komut isteminde yazan (farklÄ± da olabilir) 
+http://127.0.0.1:8000/ sitesini kullandÄ±ÄŸÄ±nÄ±z tarayÄ±cÄ± Ã¼zerinden aÃ§Ä±n.
 
 
+run.bat dosyasÄ± sorun Ã§Ä±kartÄ±r ise ÅŸu yÃ¶ntemi deneyebilirsiniz:
 
-Projeyi masaüstüne myBlog klasörü olarak tek parçada çıkartın.
+Microsoft Komut Ä°stemi'ni aÃ§Ä±n.
 
-C:\Users\...\Desktop\myBlog dizininde bulunan run.bat dosyasını çalıştırın.
-Komutlar çalıştıktan sonra komut isteminde yazan (farklı da olabilir) 
-http://127.0.0.1:8000/ sitesini kullandığınız tarayıcı üzerinden açın.
-
-
-
-run.bat dosyası sorun çıkartır ise bu yöntemi deneyebilirsiniz.
-
-Microsoft Komut İstemi'ni açın.
-
-1)cd Desktop\myBlog  yazarak dizine girin.
-2)python manage.py runserver  (hala myBlog dizininde olduğunuza emin olduktan sonra) komutunu yazıp sunucuyu çalıştırın.
-3)Komut isteminde yazan (farklı da olabilir) http://127.0.0.1:8000/ sitesini kullandığınız tarayıcı üzerinden açın.
+1)cd [Dizin]\myBlog  yazarak dizine girin.
+2)python manage.py runserver  (hala myBlog dizininde olduÄŸunuza emin olduktan sonra) komutunu yazÄ±p sunucuyu Ã§alÄ±ÅŸtÄ±rÄ±n.
+3)Komut isteminde yazan (farklÄ± da olabilir) http://127.0.0.1:8000/ sitesini kullandÄ±ÄŸÄ±nÄ±z tarayÄ±cÄ± Ã¼zerinden aÃ§Ä±n.
 
 ///////////////////////////////////////
-ÖDEV - 2   GÜNCELLEME
+DES KullanÄ±m
 //////////////////////////////////////
 
-Kullanılan Algoritma : Data Encryption Standart (DES)
+KullanÄ±lan Algoritma : Data Encryption Standart (DES)
 
-Kullandığım 8-bit Anahtar : firstkey
+KullandÄ±ÄŸÄ±m 8-bit Anahtar : firstkey
 
-Ödevde verilen İsim Soyisim, aaaaaaaaaa, aaaaabaaaa ve şarkı sözü DES algoritmasının
-encoder fonksiyonu ile şifrelenip veritabanına kaydedilmiştir. Bu şifreli bilgiler veritaba-
-nından çekilip decoder fonksiyonu ile tekrar ilk haline getirilip index.html'de ekrana 
-bastırılmıştır. Ödevi açtıktan sonra biraz aşağıya inerek detaylı tabloyu görebilirsiniz.
-
-5. senaryodaki 0 ve 1 keyleri ile şifrelediğim metinler birbirinin aynısı çıktı.
+Verilen Ä°sim Soyisim, aaaaaaaaaa, aaaaabaaaa ve ÅŸarkÄ± sÃ¶zÃ¼ DES algoritmasÄ±nÄ±n
+encoder fonksiyonu ile ÅŸifrelenip veritabanÄ±na kaydedilmiÅŸtir. Bu ÅŸifreli bilgiler veritaba-
+nÄ±ndan Ã§ekilip decoder fonksiyonu ile tekrar ilk haline getirilip index.html'de ekrana 
+bastÄ±rÄ±lmÄ±ÅŸtÄ±r. Projeyi aÃ§tÄ±ktan sonra biraz aÅŸaÄŸÄ±ya inerek detaylÄ± tabloyu gÃ¶rebilirsiniz.
 
 ///////////////////////////////////////
-ÖDEV - 3   GÜNCELLEME
+RSA KullanÄ±m
 //////////////////////////////////////
 
-Mona Lisa'nın Gülüşü - Random
-
-///////////////////////////////////////
-ÖDEV - 4   GÜNCELLEME
-//////////////////////////////////////
-
-Ödevin bu adımında RSA şifreleme algoritmasını kullandım. Öncelikle kendime kütüphanenin metodları yardımıyla bir public bir de private
-key oluşturdum. Oluşturduğum public key ile 100 karakterlik metnimi şifreledim. Şifrelediğim bu metni daha sonra özel anahtar ile
-deşifreledim ve ilk haline kavuşmasını gördüm. Ardından farklı bir public key ile şifrelediğim bu metni ilk özel anahtarım ile açmayı 
-denediğimde hata verdiğini gördüm. Önceki ödevlerde olduğu gibi run.bat dosyasını çalıştırarak Ödev-4 Kısmına inip detaylı bir şekilde
-yaptığım adımları görebilirsiniz.
+Bu adÄ±mda RSA ÅŸifreleme algoritmasÄ±nÄ± kullanÄ±ldÄ±. Ã–ncelikle kendimize kÃ¼tÃ¼phanenin metodlarÄ± yardÄ±mÄ±yla bir public bir de private
+key oluÅŸturuyoruz. OluÅŸturduÄŸumuz public key ile 100 karakterlik metnimizi ÅŸifreliyoruz. ÅifrelediÄŸimiz bu metni daha sonra Ã¶zel anahtar ile deÅŸifreleme iÅŸlemine tabi tutuyoruz ve ilk haline tekrar geldiÄŸini gÃ¶rÃ¼yoruz. ArdÄ±ndan farklÄ± bir public key ile ÅŸifrelediÄŸimiz bu metni ilk private keyimiz ile aÃ§mayÄ± denediÄŸimizde hata verdiÄŸini gÃ¶rÃ¼yoruz. Bu adÄ±mlar sayesinde de RSA nÄ±n iÅŸleyiÅŸini anlayabiliyoruz.
